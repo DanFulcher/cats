@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
+	
+import './fonts/rubik/Rubik-Regular.ttf';
+import './fonts/rubik/Rubik-Bold.ttf';
+import './fonts/rubik/Rubik-Light.ttf';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
