@@ -43,6 +43,9 @@ const Card = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-basis: 49%;
+  }
 `;
 const CatPic = styled.img`
   width: 100%;

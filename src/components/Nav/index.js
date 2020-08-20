@@ -30,7 +30,7 @@ const Nav = ({ links }) => (
         {link.label}
       </NavLink>
     ))}
-    <NavLink to="/">
+    <NavLink to="/" className="d-none d-sm-none d-md-block">
       <img src={home} alt="home icon" />
     </NavLink>
   </Navigation>
