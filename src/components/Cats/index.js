@@ -11,7 +11,7 @@ const Cats = ({ data }) => (
         <h1>Our Cats</h1>
       </Banner>
     </Row>
-    <Row className="justify-content-between">
+    <Row className="justify-content-between" data-test="CatsComponent">
       {data && data.length > 1
         ? data.map((cat) => (
           <Cat key={cat.name} cat={cat} />

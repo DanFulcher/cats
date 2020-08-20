@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { colours } from '../../styles';
 
 const Button = ({ text, onClick }) => (
-  <But onClick={onClick}>
+  <But onClick={onClick} data-test="ButtonComponent">
     {text}
   </But>
 );
